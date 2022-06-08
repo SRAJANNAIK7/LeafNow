@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="Registration.css">
+
+    
+</head>
+<body>
+
+    <!-- header section starts  -->
+
+<header>
+
+    <div class="header-1">
+
+        <div class="share">
+            <span> Follow us : </span>
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+
+        <div class="call">
+            <span> Call us : </span>
+            <a href="#">+132-672-7865</a>
+        </div>
+
+    </div>
+
+    <div class="header-2">
+
+        <!-- <a href="#" class="logo"> <i class="fas fa-seedling"></i> LEAF NOW</a> -->
+        <a href="#" class="logo"> <img src="logo.jpg" style="width:50px;height:50px;"> LEAF NOW</a>
+    
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </div>
+
+    <div class="header-3">
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html#category">Category</a>
+            <a href="index.html#product">Plants</a>
+            <a href="index.html#seeds">Seeds</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="Registration.html" class="fas fa-user-circle"></a>
+        </div>
+
+    </div>
+
+</header>
+
+<h1>Registration Form <br><br></h1>
+
+            <form name="myform" method="post" onSubmit="return validate()">
+
+                        <table align="center" cellpadding="10">
+
+            <!-- <!——— First Name ——> -->
+
+                        <tr>
+
+                                    <td> First Name </td>
+
+                                    <td> <input type="text" name="fname" maxlength="30"/></td>
+
+                                    </tr>
+
+<!-- <!——— Last Name ——> -->
+
+            <tr>
+
+                        <td> Last Name </td>
+
+                        <td> <input type="text" name="lname" maxlength="30"/></td>
+
+            </tr>             
+
+<!-- <!———DOB ——> -->
+
+<tr>
+
+                        <td> Date of Birth </td>
+
+                        <td> <input type="date" name="date" id="date" min="1981-01-01"/></td>
+
+            </tr>                                     
+
+<!-- <!——— Email ID ——> -->
+
+            <tr>
+
+                        <td> Email ID </td>
+
+                        <td> <input type="text" name="email" maxlength="100"/></td>
+
+            </tr>
+
+<!-- <!——— Phone no.——> -->
+
+            <tr>
+
+                        <td> Contact No </td>
+                        <td> <input type="text" name="phone"/>    </td>
+
+            </tr> 
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td>Confirm Password</td>
+                <td><input type="password" name="input"></td>
+            </tr> 
+            
+
+<!-- <!——— Gender radio button——> -->
+
+            <tr>
+
+                        <td> Gender </td>
+
+                        <td> Male <input type="radio" name="gender" value="male"/>
+
+                                    Female <input type="radio" name="gender" value="female"/></td>
+
+                        </tr>
+
+<!-- <!——— Address ——> -->
+
+            <tr>
+
+                        <td>Address</td>
+                        <td><textarea name="address" placeholder="Enter Address" cols="50"></textarea></td>
+
+            </tr>           
+
+<!-- <!——— State select tag——> -->
+
+            <tr>
+
+                        <td>State</td>
+
+                        <td>
+
+                            <select id="state" name="state">
+
+                            <option value="Select a state">Select a state</option>
+
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="assam">Assam</option>
+                            <option value="kerla">Kerla</option>
+                            <option value="AP">AP</option>
+                            <option value="delhi">Delhi</option>
+                            <option value="GOA">GOA</option>
+                            <option value= "kolkata">Kolkata</option>
+
+                            </select>
+
+                        </td>
+
+            </tr>
+
+<!-- <!——— Country——> -->
+
+<tr>
+
+                        <td> Country</td>
+
+                        <td> <input type="text" value= "India" name="country" readonly= "readonly "/></td>
+
+            </tr>
+
+           
+
+<!-- <!—- Submit——-> -->
+
+<tr>
+
+                        <td colspan= "2" align="center">
+
+                        <input type="submit" name="submit" value="Submit"/>
+
+                        </td>
+
+            </tr>
+
+</table>
+
+</form> 
+
+    
+<script src="Registration.js"></script>
+</body>
+</html>
